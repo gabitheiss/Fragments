@@ -20,6 +20,13 @@
         android:layout_margin="16dp"
         android:text="Lista" />
 
+    <Button
+        android:id="@+id/buttonChangeDividir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Dividir tela" />
+
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"

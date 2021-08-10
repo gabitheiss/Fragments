@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.example.projetofragments.fragments.DividirTelaFragment
 import com.example.projetofragments.fragments.ListaFragment
 import com.example.projetofragments.fragments.PrimeiroFragment
 import com.example.projetofragments.fragments.SegundoFragment
@@ -36,7 +37,11 @@ class MainActivity : AppCompatActivity() {
                 replaceFrag(ListaFragment())
             }
         }
-
+        findViewById<Button>(R.id.buttonChangeDividir).apply {
+            setOnClickListener{
+                replaceFrag(DividirTelaFragment())
+            }
+        }
 
     }
 
@@ -50,5 +55,5 @@ class MainActivity : AppCompatActivity() {
 
 enum class TipoFragment {
     PRIMEIRO,
-    SEGUNDO
+    SEGUNDO,
 }
